@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/*- White: hsl(0, 0%, 100%)
+- Pale blue: hsl(221, 100%, 96%)
+- Light lavender: hsl(241, 100%, 89%)
+- Dark gray blue: hsl(224, 30%, 27%) */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --Cobalt-blue: rgb(17, 37, 212);
+    --Green-teal: rgb(0, 189, 145);
+    --Light-red: rgb(255, 87, 87);
+    --Orangey-yellow: rgb(255, 176, 31);
+    --gradient1: rgb(120, 87, 255), rgb(46, 43, 233);
+    --gradient2: rgb(78, 33, 202), rgba(36, 33, 202, 0);
+    --font-pricipal: 'Hanken Grotesk', sans-serif;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk' ;
+}
+
+
+section#resultado {
+    background: linear-gradient(to bottom, var(--gradient1));
+    text-align: center;
+    color: white;
+    padding: 20px 35px 20px 35px;
+    border-radius: 0 0 25px 25px ;
+}
+
+#resultado h1{
+    font-size: 1.001em;
+}
+
+#resultado h3 {
+    font-size: 0.8em;
+    color: hsl(241, 100%, 89%);
+}
+
+div#result {
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: block;
+    height: 100px;
+    left: 50%;
+    margin-top: 15px;
+    margin-bottom: 22px;
+    position: relative;
+    transform: translate(-50%);
+    width: 100px;
+}
+
+div#result p {
+    position: relative;
+    top: 20%;
+    font-size: 0.6em;
+}
+
+div#result span#maior {
+    padding-bottom: 2px;
+    color: white;
+    font-size: 2.5rem;
+    display: block;
+}
+
+p {
+    font-size: 0.75em;
+    color: rgba(255, 255, 255, 0.589);
+}
+
+section#resulmo {
+    margin: 15px;
+}
+
+section#resulmo h2 {
+    font-size: 1em;
+}
+
+section#resulmo table {
+    padding: 10px;
+    margin-top: 14px;
+    width: 100%;
+}
+
+section#resulmo ul{
+    list-style-type: none;
+} 
+
+section#resulmo ul li {
+    border-radius: 8px;
+    font-size: 0.9em;
+    margin: 20px;
+    padding: 15px;
+}
+
+section#resulmo span.direita {
+    text-align: right;
+    float: right;
+}
+
+#vermelho {
+    background: rgba(255, 87, 87, 0.151);
+    color: var(--Light-red);
+}
+
+#amarelo {
+    background: rgba(255, 177, 31, 0.151);
+    color: var(--Orangey-yellow);
+}
+
+#verde{
+    background: rgba(0, 189, 145, 0.151);
+    color: var(--Green-teal);
+}
+
+#azul {
+    background: rgba(17, 37, 212, 0.151);
+    color: var(--Cobalt-blue);
+}
+
+main > button{
+    background: hsl(224, 30%, 27%);
+    border-radius: 45px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    height: 40px;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%);
+    width: 80%;
+}
