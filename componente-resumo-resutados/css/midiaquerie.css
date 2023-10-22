@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    main {
+        height: 290px;
+        width: 500px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        box-shadow: 1px 5px 5px 5px lightblue;
+    }
+    
+    section#resultado{
+        height: 87%;
+        width: 42%;
+        float: left;
+        border-radius: 10px;
+    }
+
+    section#resultado #result {
+        width: 120px;
+        height: 120px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    section#resulmo{
+        width: 42%;
+        height: 80%;
+        float: right;
+        font-size: 0.8em;
+        margin: 15px 0 0 0;
+    }
+
+    section#resulmo ul li {
+        padding: 10px;
+        margin: 15px;
+    }
+
+    button {
+        height: 20px;
+    }
+
+
+}

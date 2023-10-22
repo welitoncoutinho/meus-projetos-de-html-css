@@ -124,7 +124,7 @@ section#resulmo span.direita {
     color: var(--Cobalt-blue);
 }
 
-main > button{
+main button{
     background: hsl(224, 30%, 27%);
     border-radius: 45px;
     border: none;
@@ -135,4 +135,8 @@ main > button{
     position: relative;
     transform: translate(-50%);
     width: 80%;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, var(--gradient1));
 }
