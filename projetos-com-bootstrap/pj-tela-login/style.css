@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/* Meu estilo css */
+iframe::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#6610f2, #6f42c1);
+}
+
+section{
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+iframe{
+    box-sizing: content-box;
+    border: 2px solid #3c009c;
+    border-radius: 5%;
+    box-shadow: 1px 1px 5px rgb(0, 0, 218);
+    height: 100%;
+    background: linear-gradient(#6610f2, #6f42c1);
+}
+
+  
