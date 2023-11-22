@@ -11,8 +11,8 @@ body{
 }
 
 .planet{
-    width: 30em;
-    height: 30em;
+    width: 15em;
+    height: 15em;
     background: white;
     border-radius: 50%;
     box-shadow: 
@@ -25,8 +25,8 @@ body{
 .satellite, .satellite::after{
     content: "";
     position: absolute;
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
     border-radius: 50%;
 }
 
@@ -37,7 +37,7 @@ body{
     transition: 250ms;
     left: 32em;
     transform: rotate(20deg);
-    animation: round 5s infinite ease-in-out;
+    animation: round 3s infinite ease-in-out;
 }
 
 .satellite::after{
@@ -45,7 +45,7 @@ body{
     width: 2.5em;
     left: 2.5em;
     box-shadow: 0 0 0.75em 0.95em #262938;
-    animation: shadow 5s infinite ease-in-out;
+    animation: shadow 3s infinite ease-in-out;
 }
 
 @keyframes shadow {
@@ -84,7 +84,7 @@ body{
     0%,
     100%{
         top: 2em;
-        left: -15em;
+        left: -8em;
         box-shadow: -2em 0 5em 0.5em #c6836466;
         z-index: 2;
     }
@@ -102,8 +102,8 @@ body{
     }
 
     50% {
-        left: 40em;
-        top: 20em;
+        left: 18em;
+        top: 10em;
         z-index: -1;
         box-shadow: 2em  0 5em 0.5em #845a4682;
     }
