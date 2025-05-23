@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loja Virtual Completa</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>🛒 Nerdverson </h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="open-cart">Carrinho (<span id="cart-count">0</span>)</button>
+  </header>
+
+  <main>
+    <section id="inicio">
+        <h2>Bem-vindo à Loja Geek</h2>
+        <p>
+          A <strong>Loja Geek</strong> foi desenvolvida com o objetivo de simular uma loja virtual voltada para os apaixonados por cultura pop, games, animes, filmes e séries.
+        </p>
+        <p>
+          Aqui você pode cadastrar e visualizar produtos como <em>camisetas personalizadas</em>, <em>action figures</em>, <em>canecas temáticas</em> e muito mais. Tudo foi feito usando:
+        </p>
+        <ul>
+        </ul>
+        <p>Prepare-se para explorar um universo geek cheio de estilo e personalidade! 👾</p>
+      </section>
+
+    <section id="product-form">
+      <h2>Procurar Produto</h2>
+      <input type="text" id="product-name" placeholder="Nome do Produto" />
+      <input type="number" id="product-price" placeholder="Preço do Produto" />
+      <button id="add-product">Procurar Produto</button>
+    </section>
+    <h2>Produtos Disponíveis</h2>
+    <section id="product-list">
+      
+      <!-- Produtos aparecem aqui -->
+    </section>
+
+  </main>
+
+  <aside id="cart" class="hidden">
+    <h2>Carrinho</h2>
+    <ul id="cart-items"></ul>
+    <div class="cart-footer">
+      <p id="cart-total">Total: R$ 0,00</p>
+      <button id="clear-cart">Limpar Carrinho</button>
+      <button id="checkout">Finalizar Compra</button>
+      <button id="close-cart">Fechar</button>
+    </div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 Loja Virtual Completa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

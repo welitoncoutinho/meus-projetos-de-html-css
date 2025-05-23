@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Virtual Completa</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 Loja Virtual</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="open-cart">Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main>
+
+        <h2>Produtos Sugeridos</h2>
+        <section id="product-list">
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(1)">×</button>
+                <h3 class="name">Mangás</h3>
+                <p>R$ 40.00</p>
+                <button onclick="addToCart(1)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(2)">×</button>
+                <h3>Action figure</h3>
+                <p>R$ 199.99</p>
+                <button onclick="addToCart(2)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(3)">×</button>
+                <h3>Camisa personalisada</h3>
+                <p>R$ 100.00</p>
+                <button onclick="addToCart(3)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(4)">×</button>
+                <h3>Caneca personalisada</h3>
+                <p>R$ 49.99</p>
+                <button onclick="addToCart(4)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(5)">×</button>
+                <h3>Moleton personalisado</h3>
+                <p>R$  150.99</p>
+                <button onclick="addToCart(5)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="product">
+                <button class="delete-product" onclick="deleteProduct(6)">×</button>
+                <h3>Posters</h3>
+                <p>R$ 50.99</p>
+                <button onclick="addToCart(6)">Adicionar ao Carrinho</button>
+            </div>
+        </section>
+
+    </main>
+
+    <aside id="cart" class="hidden">
+        <h2>Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <div class="cart-footer">
+            <p id="cart-total">Total: R$ 0,00</p>
+            <button id="clear-cart">Limpar Carrinho</button>
+            <button id="checkout">Finalizar Compra</button>
+            <button id="close-cart">Fechar</button>
+        </div>
+    </aside>
+
+    <footer>
+        <p>&copy; 2025 Loja Virtual Completa</p>
+    </footer>
+
+    <script src="produtos.js"></script>
+</body>
+
+</html>
