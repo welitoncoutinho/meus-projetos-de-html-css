@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loja Virtual Completa</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .cor {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            padding: 300px;
+
+        }
+
+
+        .balao-contato {
+            background-color: #f9f9f9;
+            border: 2px solid #ccc;
+            border-radius: -10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nos {
+            background-color: #f9f9f9;
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .info {
+            background-color: #383f47;
+            border: 2px solid #ccc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+            width: auto;
+            height: auto;
+            padding: auto;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        textarea {
+            width: 98%;
+            padding: 4px;
+            margin-top: 9px;
+            border: -1px solid rgb(255, 255, 255);
+            border-radius: 4px;
+            color: black;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"] {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #383f47;
+        }
+
+        .info p {
+            line-height: 1.9;
+            background-color: #ffffff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🛒 Nerdverson </h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="open-cart">Carrinho (<span id="cart-count">0</span>)</button>
+    </header>
+
+    <main>
+
+        <section id="contato">
+            <div class="balao-contato">
+                <h2 style="text-align: center;">Entre em contato</h2><br>
+            </div>
+            <br><br><br>
+            <div class="texto-feed">
+                <h4 style="text-align: center;"> Fique à vontade para entrar em contato conosco. Estamos sempre à
+                    disposição para o melhor atendimento e suporte ao cliente.<br>
+                    Cada feedback é importante para a melhoria da loja e melhor suporte ao cliente. Permitir que nossos
+                    clientes se sintam à vontade, confortáveis e confiantes é o que prezamos!</h4>
+                <br><br><br><br><br><br>
+            </div>
+        </section>
+
+
+        <section id="nos">
+            <div class="nos">
+                <form action="#" method="post">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="nome" required>
+
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="nome" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form><br><br>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info">
+                <br><span class="cor" <h3>Telefone</h3><br></span>
+                <p>(31) 3475-7575</p><br>
+                <span class="cor" <h3>Email</h3><br></span>
+                <p>Nerdverson@lojavirtualcompleta.com</p><br>
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 Loja Virtual Completa</p>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
