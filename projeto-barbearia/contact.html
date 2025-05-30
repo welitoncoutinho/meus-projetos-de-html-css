@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte corte</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/contact.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <div class="logo">
+                <i id="tesoura" class="fas fa-scissors"></i>
+                <span>Arte</span> Corte
+            </div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">Sobre Nós</a>
+                <a href="store.html">Loja</a>
+                <a href="contact.html">Contato</a>
+                <a href="#" class="cart">🛒</a>
+            </nav>
+        </header>
+        <main>
+
+            <h1><span>Entre em</span> contato</h1>
+            <p>Tire suas dúvidas. Estamos à disposição para melhor atendê-lo.</p>
+            <div class="contact">
+                <form action="#" method="post">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+                <section class="info">
+                    <div class="endereco">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3>Endereço</h3>
+                        <p>Rua da Barbearia, 123 - Centro<br>Minas Gerais/MG</p>
+                    </div>
+                    <div class="telefone">
+                        <i class="fa-solid fa-phone"></i>
+                        <h3>Telefone</h3>
+                        <p>(31) 3487-7186<br>(31) 99751-5368 (WhatsApp)</p>
+                    </div>
+                    <div class="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3>Email</h3>
+                        <p>barbeariaartecorte@gmail.com</p>
+                    </div>
+                    <div class="horario">
+                        <i class="fa-solid fa-clock"></i>
+                        <h3>Horário de funcionamento</h3>
+                        <p>A partir de 7:00 ás 21:00 de Segunda a Sexta <br>
+                            Sábado de 8:00 ás 12:00</p>
+                    </div>
+                </section>
+            </div>
+            <section class="mapa">
+                <h3>Localização no Mapa</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18..." allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Loja</a>
+            <a href="#">Contato</a>
+        </nav>
+        <p>Copyright </p>
+    </footer>
+</body>
+
+</html>

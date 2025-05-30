@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div.container{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px 10px 20px;
+    background-color: #251203;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4D0E07;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.logo {
+    font-size: 2rem;
+    color: #91541E;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 2.1rem;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+nav a {
+    color: #91541E;
+    margin-left: 1.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 0.3rem;
+}
+
+nav a.cart {
+    font-size: 1.2rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: #91541E;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 80px);
+    padding: 2rem;
+    background: url(../img/fundohome.png) no-repeat center center/cover;
+    border-radius: 0 0 10px 10px;
+}
+
+.content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.3;
+    color: #fff;
+}
+
+h1 span {
+    color: #b87333;
+}
+
+p {
+    margin: 1rem 0 2rem;
+    color: #ddd;
+    font-size: 1.1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn.primary {
+    background-color: #c0841d;
+    color: #fff;
+}
+
+.btn.secondary {
+    background-color: #721d1d;
+    color: #fff;
+}
+
+
+#tesoura {
+    font-size: 56px;
+    padding-top: 10px;
+    color: #91541E;
+}
+
+a,
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+h1,
+p {
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.btn {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeSlide {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    animation: fadeSlide 1s ease-out forwards;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        filter: brightness(100%);
+    }
+
+    50% {
+        filter: brightness(110%);
+    }
+}
+
+.fundo {
+    animation: pulse 8s infinite;
+}
+
+nav a {
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: currentColor;
+    bottom: -3px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+}
+
+.content {
+    opacity: 0;
+    animation: fadeIn 2s ease forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.btn.primary {
+    animation: pulseBtn 2s infinite;
+}
+
+@keyframes pulseBtn {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+#tesoura {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.btn.primary:hover {
+    background-color: #a8640f;
+    transition: background-color 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+footer{
+    background-color: #0a0600;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+footer>nav>a{
+    font-size: 0.9rem;
+    border-bottom: none;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 5px;
+    margin: 0;
+    color: rgb(87, 86, 86);
+}

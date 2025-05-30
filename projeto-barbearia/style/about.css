@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+div.container{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px 10px 20px;
+    background-color: #251203;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4D0E07;
+    padding: 0.8rem 1.2rem;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.logo {
+    font-size: 2rem;
+    color: #91541E;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 2.1rem;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+nav a {
+    color: #91541E;
+    margin-left: 1.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 0.3rem;
+}
+
+nav a.cart {
+    font-size: 1.2rem;
+}
+
+nav a {
+    font-size: 1.2rem;
+    color: #91541E;
+}
+
+
+
+#tesoura {
+    font-size: 56px;
+    padding-top: 10px;
+    color: #91541E;
+}
+
+#tesoura {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+body {
+    background-color: #120902;
+    /* fundo escuro */
+    color: white;
+    /* texto branco */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+img {
+    width: 475px;
+    height: 750px;
+    border-radius: 30px;
+}
+
+.icone {
+    width: 35px;
+    height: 35px;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.texto {
+    font-size: 1.36rem;
+
+}
+
+main {
+    width: 80rem;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: 40px;
+}
+
+.titulo-imagem {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto-icones {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.conteiner-icone {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #91541E;
+}
+
+.conteiner-icone2 {
+    width: 45px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #4D0E07;
+}
+
+span {
+    color: #91541E;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.descrição {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.flex {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+footer{
+    background-color: #0a0600;
+    width: 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
+
+footer>nav>a{
+    font-size: 0.9rem;
+    border-bottom: none;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 5px;
+    margin: 0;
+    color: rgb(87, 86, 86);
+}
