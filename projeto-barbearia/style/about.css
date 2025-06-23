@@ -113,8 +113,6 @@ img {
     border-radius: 30px;
 }
 
-
-
 .icone {
     width: 35px;
     height: 35px;
@@ -123,29 +121,18 @@ img {
 }
 
 .texto {
-    font-size: 1.6vw;
+    font-size: 1.36rem;
     text-align: justify;
+
 }
 
 main {
-    width: 100%;
+    width: 80rem;
     display: flex;
     align-items: center;
     margin: auto;
     gap: 40px;
 }
-
-@media (max-width: 810px){
-    main{
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-    .texto {
-        font-size: 2vw;
-        
-    }
-}
-
 
 .titulo-imagem {
     display: flex;
@@ -182,7 +169,7 @@ h1 {
 
 .descrição {
     font-family: Arial, sans-serif;
-    font-size: 1.25;
+    font-size: 20px;
     margin-top: 10px;
 }
 
@@ -211,43 +198,4 @@ footer p{
     margin-top: 5px;
     margin: 0;
     color: rgb(87, 86, 86);
-}
-
-
-.menu{
-    display: none;
-}
-
-.close{
-    display: none;
-}
-
-
-
-@media (max-width: 810px){
-    .menu{
-        display: block;
-        position: static;
-        left: 500px;
-        top: 20px;
-        cursor: pointer;
-    }
-
-    .close{
-        display: none;
-        cursor: pointer;
-    }
-    header>div>nav{
-        display: none;
-    }
-    .active{
-        display: flex;
-        flex-direction: column;
-    }
-    .disabled{
-        display: none;
-    }
-    .abled{
-        display: block;;
-    }
 }
