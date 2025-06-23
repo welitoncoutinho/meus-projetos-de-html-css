@@ -22,19 +22,23 @@
                 <i id="tesoura" class="fas fa-scissors"></i>
                 <span>Arte</span> Corte
             </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">Sobre Nós</a>
-                <a href="store.html">Loja</a>
-                <a href="contact.html">Contato</a>
-                <a href="#" class="cart">🛒</a>
-            </nav>
+            <div>
+                <span class="close" onclick="active(); troca()"><i class="fa-solid fa-x"></i></span>
+                <span class="menu" onclick="active(); troca()"><i class="fa-solid fa-bars"></i></span>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Sobre Nós</a>
+                    <a href="store.html">Loja</a>
+                    <a href="contact.html">Contato</a>
+                    <a href="#" class="cart" id="open-cart" onclick="openCart()">🛒</a>
+                </nav>
+            </div>
         </header>
         <!-- Seção home -->
         <main class="home">
             <div class="content fade-in">
                 <h1>
-                    Sua imagem <span>fala por</span><br/>
+                    Sua imagem <span>fala por</span><br />
                     você, deixe ela <span>afiada!</span>
                 </h1>
                 <p>
@@ -47,6 +51,16 @@
                 </div>
             </div>
         </main>
+        <aside id="cart" class="hidden">
+            <h2>Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-footer">
+                <p id="cart-total">Total: R$ 0,00</p>
+                <button id="clear-cart">Limpar Carrinho</button>
+                <button id="checkout">Finalizar Compra</button>
+                <button id="close-cart">Fechar</button>
+            </div>
+        </aside>
     </div>
 
     <footer>
@@ -58,6 +72,16 @@
         </nav>
         <p>Copyright </p>
     </footer>
+    <script>
+        function active(){
+            document.querySelector('header>div>nav').classList.toggle('active')
+        }
+        function troca(){
+            document.querySelector('.menu').classList.toggle('disabled')
+            document.querySelector('.close').classList.toggle('abled')
+        }
+    </script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>

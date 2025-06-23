@@ -123,6 +123,7 @@ main>p{
 }
 
 div .contact {
+    flex-wrap: wrap;
     display: flex;
     gap: 40px;
     align-items: center;
@@ -283,4 +284,46 @@ footer p {
     margin-top: 5px;
     margin: 0;
     color: rgb(87, 86, 86);
+}
+
+
+.menu{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+
+@media (max-width: 810px){
+    .menu{
+        display: block;
+        position: static;
+        left: 500px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .close{
+        display: none;
+        position: absolute;
+        left: 500px;
+        top: 20px;
+        cursor: pointer;
+    }
+    header>div>nav{
+        display: none;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+    }
+    .disabled{
+        display: none;
+    }
+    .abled{
+        display: block;;
+    }
 }

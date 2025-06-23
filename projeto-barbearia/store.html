@@ -13,26 +13,30 @@
 
 <body>
     <div class="container">
-        
+
         <!-- Cabeçalho -->
         <header>
             <div class="logo">
                 <i id="tesoura" class="fas fa-scissors"></i>
                 <span>Arte</span> Corte
             </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">Sobre Nós</a>
-                <a href="store.html">Loja</a>
-                <a href="contact.html">Contato</a>
-                <a href="#" class="cart">🛒</a>
-            </nav>
+            <div>
+                <span class="close" onclick="active(); troca()" ><i class="fa-solid fa-x"></i></span>
+                <span class="menu" onclick="active(); troca()"><i class="fa-solid fa-bars"></i></span>
+                <nav>
+                    <a href="index.html" class="links">Home</a>
+                    <a href="about.html" class="links">Sobre Nós</a>
+                    <a href="store.html" class="links">Loja</a>
+                    <a href="contact.html" class="links">Contato</a>
+                    <span id="carrinho"><a href="#" class="cart links" id="open-cart" onclick="openCart()">🛒(<span id="cart-count">0</span>)</a></span>
+                </nav>
+            </div>
         </header>
         <main>
             <div class="titulo">
                 <h1><span>Nossa</span> Loja</h1>
                 <p>
-                    Produtos selecionados para você cuidar do seu visual 
+                    Produtos selecionados para você cuidar do seu visual
                 </p>
                 <p>
                     em casa com a qualidade garantida por nossa barbearia.
@@ -46,7 +50,7 @@
                         <h3>Kit Barba Premium </h3>
                         <p class="descricao-parargrafo">Kit completo com pincel, navalha, óleo e creme para barba.</p>
                         <p class="descricao-preco">R$: 289,00</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(1)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -55,9 +59,10 @@
                     <img src="img/img2.jpg" alt="imagens2">
                     <div class="produto-descricao">
                         <h3>Pomada Modeladora</h3>
-                        <p class="descricao-parargrafo">Fixação forte com brilho natural. Ideal para penteados clássicos.</p>
+                        <p class="descricao-parargrafo">Fixação forte com brilho natural. Ideal para penteados
+                            clássicos.</p>
                         <p class="descricao-preco">R$: 59,90</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(2)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -68,7 +73,7 @@
                         <h3> Oléo para barba</h3>
                         <p class="descricao-parargrafo">Hidratação profunda com fragrância de madeira e especiarias.</p>
                         <p class="descricao-preco">R$: 79,90</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(3)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -77,9 +82,10 @@
                     <img src="img/img4.jpg" alt="trabalho4">
                     <div class="produto-descricao">
                         <h3>Kit Cuidados Diários</h3>
-                        <p class="descricao-parargrafo">Shampoo, condicionador e loção pós-barba em fragrância clássica.</p>
+                        <p class="descricao-parargrafo">Shampoo, condicionador e loção pós-barba em fragrância clássica.
+                        </p>
                         <p class="descricao-preco">R$: 129,90</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(4)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -88,9 +94,10 @@
                     <img src="img/img5.png" alt="imagens1">
                     <div class="produto-descricao">
                         <h3>Bálsamo para Barba</h3>
-                        <p class="descricao-parargrafo">Bálsamo que hidrata, alinha e modela a barba com toque leve e sem frizz.</p>
+                        <p class="descricao-parargrafo">Bálsamo que hidrata, alinha e modela a barba com toque leve e
+                            sem frizz.</p>
                         <p class="descricao-preco">R$: 59,90</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(5)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -99,9 +106,10 @@
                     <img src="img/img6.png" alt="imagens1">
                     <div class="produto-descricao">
                         <h3>Tônico para Crescimento</h3>
-                        <p class="descricao-parargrafo">Tônico que estimula o crescimento da barba, fortalecendo os fios desde a raiz.</p>
+                        <p class="descricao-parargrafo">Tônico que estimula o crescimento da barba, fortalecendo os fios
+                            desde a raiz.</p>
                         <p class="descricao-preco">R$: 139,00</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(6)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -110,9 +118,10 @@
                     <img src="img/img7.png" alt="imagens1">
                     <div class="produto-descricao">
                         <h3>Spray Fixador</h3>
-                        <p class="descricao-parargrafo">Spray fixador de fixação média que mantém o penteado no lugar com leveza e durabilidade.</p>
+                        <p class="descricao-parargrafo">Spray fixador de fixação média que mantém o penteado no lugar
+                            com leveza e durabilidade.</p>
                         <p class="descricao-preco">R$: 35,00</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(7)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
@@ -121,14 +130,25 @@
                     <img src="img/img8.png" alt="imagens1">
                     <div class="produto-descricao">
                         <h3>Gel Esfoliante Facia</h3>
-                        <p class="descricao-parargrafo">Gel esfoliante facial que limpa profundamente, removendo impurezas e células mortas da pele.</p>
+                        <p class="descricao-parargrafo">Gel esfoliante facial que limpa profundamente, removendo
+                            impurezas e células mortas da pele.</p>
                         <p class="descricao-preco">R$: 50,00</p>
-                        <a href="#" title="link"><i class="fa-solid fa-cart-plus fa-xl"></i></a>
+                        <button onclick="addToCart(8)" title="aaa"><i class="fa-solid fa-cart-plus fa-xl"></i></button>
                         <div class="button-compra"><a href="#">Comprar</a></div>
                     </div>
                 </div>
             </div>
         </main>
+        <aside id="cart" class="hidden">
+            <h2>Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <div class="cart-footer">
+                <p id="cart-total">Total: R$ 0,00</p>
+                <button id="clear-cart">Limpar Carrinho</button>
+                <button id="checkout">Finalizar Compra</button>
+                <button id="close-cart">Fechar</button>
+            </div>
+        </aside>
     </div>
 
     <footer>
@@ -140,6 +160,16 @@
         </nav>
         <p>Copyright </p>
     </footer>
+    <script>
+        function active(){
+            document.querySelector('header>div>nav').classList.toggle('active')
+        }
+        function troca(){
+            document.querySelector('.menu').classList.toggle('disabled')
+            document.querySelector('.close').classList.toggle('abled')
+        }
+    </script>
+    <script src="script/store.js"></script>
 </body>
 
 </html>

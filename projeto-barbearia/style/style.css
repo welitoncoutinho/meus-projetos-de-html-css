@@ -5,7 +5,7 @@
 }
 
 
-div.container{
+div.container {
     font-family: 'Poppins', sans-serif;
     padding: 10px 20px 10px 20px;
     background-color: #120902;
@@ -236,12 +236,59 @@ nav a:hover::after {
     transition: background-color 0.3s ease;
 }
 
+aside h2{
+    font-size: 1.8em;
+    color: white;
+}
+
+#cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #4D0E07;
+    width: 350px;
+    height: 100%;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+#cart.show {
+    transform: translateX(0);
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+}
+
+.cart-footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart-footer button{
+    padding: 10px;
+    background-color: #91541E;
+    border: 1px solid gray;
+}
+
+.cart-footer button:hover{
+    background-color: #91541eab;
+    border: 1px solid white;
+}
+
+
 html {
     scroll-behavior: smooth;
 }
 
 
-footer{
+footer {
     background-color: #0a0600;
     width: 100%;
     text-align: center;
@@ -249,15 +296,58 @@ footer{
     padding: 10px;
 }
 
-footer>nav>a{
+footer>nav>a {
     font-size: 0.9rem;
     border-bottom: none;
 }
 
-footer p{
+footer p {
     font-size: 0.8rem;
     font-style: italic;
     margin-top: 5px;
     margin: 0;
     color: rgb(87, 86, 86);
+}
+
+.close, .menu{
+    color: #91541E;
+}
+
+
+.menu{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+
+
+@media (max-width: 810px){
+    .menu{
+        display: block;
+        position: static;
+        left: 500px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .close{
+        display: none;
+        cursor: pointer;
+    }
+    header nav{
+        display: none;
+    }
+    .active{
+        display: flex;
+        flex-direction: column;
+    }
+    .disabled{
+        display: none;
+    }
+    .abled{
+        display: block;;
+    }
 }

@@ -19,13 +19,17 @@
                 <i id="tesoura" class="fas fa-scissors"></i>
                 <span>Arte</span> Corte
             </div>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">Sobre Nós</a>
-                <a href="store.html">Loja</a>
-                <a href="contact.html">Contato</a>
-                <a href="#" class="cart">🛒</a>
-            </nav>
+            <div>
+                <span class="close" onclick="active(); troca()"><i class="fa-solid fa-x"></i></span>
+                <span class="menu" onclick="active(); troca()"><i class="fa-solid fa-bars"></i></span>
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Sobre Nós</a>
+                    <a href="store.html">Loja</a>
+                    <a href="contact.html">Contato</a>
+                    <a href="#" class="cart">🛒</a>
+                </nav>
+            </div>
         </header>
         <main>
 
@@ -109,6 +113,15 @@
         </nav>
         <p>Copyright </p>
     </footer>
+    <script>
+        function active(){
+            document.querySelector('header>div>nav').classList.toggle('active')
+        }
+        function troca(){
+            document.querySelector('.menu').classList.toggle('disabled')
+            document.querySelector('.close').classList.toggle('abled')
+        }
+    </script>
 </body>
 
 </html>
