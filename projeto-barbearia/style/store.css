@@ -229,6 +229,7 @@ div .produto-descricao {
     padding: 10px;
     background-color: #91541E;
     border: 1px solid gray;
+    width: 100%;
 }
 
 .cart-footer button:hover {
