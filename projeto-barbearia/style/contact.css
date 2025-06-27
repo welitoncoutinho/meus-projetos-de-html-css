@@ -177,7 +177,8 @@ input[type="submit"]:hover {
 }
 
 .mapa {
-    width: 800px;
+    width: 80vw;
+    height: 40vh;
     margin: 40px auto;
     padding: 10px;
 }
@@ -267,6 +268,7 @@ iframe {
 }
 
 footer {
+    margin-top: 40px;
     background-color: #0a0600;
     width: 100%;
     text-align: center;
